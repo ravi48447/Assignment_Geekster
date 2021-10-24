@@ -1,0 +1,97 @@
+1.Check whether a number is even or odd using if...else statement
+import java.util.Scanner;
+
+public class EvenOdd {
+
+    public static void main(String[] args) {
+
+        Scanner reader = new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        int num = reader.nextInt();
+
+        if(num % 2 == 0)
+            System.out.println(num + " is even");
+        else
+            System.out.println(num + " is odd");
+    }
+}
+
+2.Program to Check Prime Number using a for loop
+public class Main {
+
+  public static void main(String[] args) {
+
+    int num = 29;
+    boolean flag = false;
+    for (int i = 2; i <= num / 2; ++i) {
+      // condition for nonprime number
+      if (num % i == 0) {
+        flag = true;
+        break;
+      }
+    }
+
+    if (!flag)
+      System.out.println(num + " is a prime number.");
+    else
+      System.out.println(num + " is not a prime number.");
+  }
+}
+3.Find Factorial of a number using for loop
+public class Factorial {
+
+    public static void main(String[] args) {
+
+        int num = 10;
+        long factorial = 1;
+        for(int i = 1; i <= num; ++i)
+        {
+            // factorial = factorial * i;
+            factorial *= i;
+        }
+        System.out.printf("Factorial of %d = %d", num, factorial);
+    }
+}
+
+4.Reverse a Number using a while loop in Java
+class Main {
+  public static void main(String[] args) {
+
+    int num = 1234, reversed = 0;
+
+    // run loop until num becomes 0
+    while(num != 0) {
+    
+      // get last digit from num
+      int digit = num % 10;
+      reversed = reversed * 10 + digit;
+
+      // remove the last digit from num
+      num /= 10;
+    }
+
+    System.out.println("Reversed Number: " + reversed);
+}
+}
+5.Program to print fibonacci series using for loop
+public class 
+{
+
+    public static void main(String[] args) {
+
+        int count = 7, num1 = 0, num2 = 1;
+        System.out.print("Fibonacci Series of "+count+" numbers:");
+
+        for (int i = 1; i <= count; ++i)
+        {
+            System.out.print(num1+" ");
+
+            int sumOfPrevTwo = num1 + num2;
+            num1 = num2;
+            num2 = sumOfPrevTwo;
+        }
+    }
+}
+
+   
