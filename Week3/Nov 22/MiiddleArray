@@ -1,22 +1,24 @@
-import java.util.Scanner;
-public class MiddleArray{
-
-	public static void main(String[] args) {
-  
-		Scanner sc=new Scanner(System.in);
-		try {
-			int []a=new int[10];
-			for(int i=0;i<a.length;i++) {
-				a[i]=sc.nextInt();
-				System.out.println(i);
-				System.out.println(i);
-				if(i==5) {
-					System.out.println(a[i]);
-					break;
-				}
-			}
-		} catch (Exception e) {
-			System.out.println(e);
-		}
-	  }
-    }
+import java.util.*;
+public class middleelement
+{
+  public static void main(String args[])
+  {
+      int []arr = new int [10];
+      int n = arr.length;
+    Scanner sc = new Scanner(System.in);
+      System.out.println("Enter the array elements");
+        for(int i=0; i<n; i++)
+        {
+            arr[i] = sc.nextInt();
+        }
+        System.out.print("The middle element of the given array : ");
+        for(int i=0; i<n; i++)
+        {
+            if(i==5)
+            {
+                System.out.println(arr[i]);
+                break;
+            }
+        }
+  }  
+}
